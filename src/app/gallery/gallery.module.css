@@ -1,10 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 .main {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 6rem;
-  min-height: 98vh;
+  min-height: 100vh;
 }
 
 .main_container {
@@ -60,12 +73,6 @@
 
 .logo {
   position: relative;
-}
-
-.footer {
-  color: rgba(229, 191, 131, 0.5);
-  text-align: center;
-  font-size: 0.6em;
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
