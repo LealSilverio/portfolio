@@ -1,0 +1,10 @@
+.education > *, 
+.experience > *, 
+.skills > * {
+  margin: 10px 0;
+}
+.education li,
+.experience li,
+.skills li {
+  margin: 10px 0;
+}

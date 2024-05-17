@@ -1,45 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
 .main {
   display: flex;
-  grid-gap: 40px;
-  padding: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  grid-gap: 30px;
+  padding: 3rem;
 }
-.logo {
-  border-radius: 15px;
-}
-.article {
-  background-color: var(--secondary-hex);
-  border-radius: 15px;
-}
-.sticky {
+
+.about {
   position: sticky;
   top: 20px;
+  flex: 1;
+  margin-right: 10px;
   text-align: center;
 }
-.sticky > * {
-  padding: 2em 1em;
+
+.about > * {
+  padding: 0.5em;
 }
-.about:first-child {
-  display:flex;
-  align-items: center;
-}
-.about div {
-  width: 12em;
-  padding: 20px 0;
-}
+
 .button {
-  width: 2em;
-  padding: 20px 0;
+  margin: 20px;
 }
-.resume section , .education > * {
-  margin: 10px 0;
+
+.card {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  transition: background 200ms, border 200ms;
 }
+
+.card span {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 200ms;
+}
+
+.card:hover {
+  background-color: var( --secondary-hex);
+}
+
+.resume {
+  flex: 2;
+  padding: 20px;
+}
+
+.resume section {
+  margin: 20px 0;
+}
+
 .resume li {
   list-style-type: none;
+  padding-left: 20px;
 }
+
 .footer {
   color: rgba(229, 191, 131, 0.5);
   text-align: center;
   font-size: 0.6em;
+  margin-top: 20px;
+  padding: 10px 0;
 }
 
 /* Mobile */
@@ -48,5 +79,14 @@
     margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }

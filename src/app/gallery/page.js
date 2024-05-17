@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./gallery.module.css";
-import Project from "./Project";
+import Project from "../components/Project";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 
