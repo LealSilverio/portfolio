@@ -30,7 +30,6 @@ export default function Home() {
           <Link
             href="/gallery"
             className={styles.card}
-            target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>Gallery <span>-&gt;</span></h2>
@@ -40,7 +39,6 @@ export default function Home() {
           <Link
             href="/resume"
             className={styles.card}
-            target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>Resume <span>-&gt;</span></h2>

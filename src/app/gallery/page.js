@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./gallery.module.css";
 import Project from "./Project";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"]});
 
@@ -33,14 +34,18 @@ export default function Gallery() {
         </section>
         <section className={styles.middle}>
         <p className={inter.className}>Design <span>-&gt;</span></p>
-        <Image
-          className={styles.logo}
-          src="/goldRose.svg"
-          alt="Rose Logo"
-          width={240}
-          height={300}
-          priority
-        />
+        <Link
+          href="/"
+          rel="noopener noreferrer">
+            <Image
+              className={styles.logo}
+              src="/goldRose.svg"
+              alt="Rose Logo"
+              width={240}
+              height={300}
+              priority
+            />
+        </Link>
         <p className={inter.className}><span>&lt;-</span> Development</p>
         </section>
         
